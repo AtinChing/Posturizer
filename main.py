@@ -100,7 +100,8 @@ def detect_shoulder(img_gray, face, direction, x_scale=0.75, y_scale=0.75):
 
 if not cap.isOpened():
     raise IOError("Cannot open webcam")
-
+tkinter.messagebox.showwarning(title = "Get ready", message = "We're going to measure your correct posture, sit straight")
+time.sleep(2.5)
 shoulder_y_values = []
 for i in range(5):
     ret, frame = cap.read()
