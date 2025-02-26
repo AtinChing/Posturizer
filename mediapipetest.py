@@ -105,8 +105,9 @@ while cap.isOpened():
         left_hand = landmarks.landmark[Landmark.HAND_LEFT.value]
         right_elbow = landmarks.landmark[Landmark.ELBOW_RIGHT.value]
         left_elbow = landmarks.landmark[Landmark.ELBOW_LEFT.value]
-        shoulder_higher = right_shoulder.y < right_elbow.y
-
+        #shoulder_higher = right_shoulder.y < right_elbow.y
+        print("RIGHT SHOULDER", right_shoulder.y)
+        print("LEFT SHOULDER", left_shoulder.y)
     
     cv2.imshow('Pose Detection', frame)
 
