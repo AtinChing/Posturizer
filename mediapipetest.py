@@ -54,8 +54,8 @@ mp_pose = mp.solutions.pose
 pose = mp_pose.Pose(
     static_image_mode=True,
     model_complexity=2,
-    min_detection_confidence=0.5,
-    min_tracking_confidence=0.5
+    min_detection_confidence=0.9,
+    min_tracking_confidence=0.9
 )
 mp_draw = mp.solutions.drawing_utils
 HAND_RIGHT = Landmark.WRIST_RIGHT # hand right is actually going to be the right wrist
